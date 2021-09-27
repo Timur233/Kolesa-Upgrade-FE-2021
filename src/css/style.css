@@ -226,6 +226,10 @@ span.field-title {
     margin-right: 8px;
 }
 
+.color-caption {
+    margin-right: 6px;
+}
+
 .color-probe.blue {
     background-color: #00458a;
 }
