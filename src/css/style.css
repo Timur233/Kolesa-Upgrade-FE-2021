@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -26,8 +26,6 @@ body * {
     top: 0;
     right: 0;
     bottom: 0;
-    overflow-y: scroll;
-    padding: 25px 25px;
 }
 
 .backdrop {
@@ -61,7 +59,7 @@ button.close-button {
     border: none;
     width: 32px;
     height: 32px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 /* Product Gallery */
@@ -165,7 +163,6 @@ body img {
     justify-content: center;
     height: 36px;
     padding: 0 20px;
-    min-width: 134px;
     border: none;
     border-radius: 8px;
     font-size: 14px;
@@ -187,7 +184,7 @@ body img {
 .product-field {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -4px 24px -4px;
+    margin-bottom: 24px;
 }
 
 span.field-title {
@@ -198,7 +195,7 @@ span.field-title {
 }
 
 .product-option {
-    margin: 8px 4px 0 4px;
+    margin: 8px 8px 0 0;
 }
 
 .product-option label {
@@ -256,6 +253,10 @@ span.field-title {
 /* Product Description */
 .product-desc {
     margin-bottom: 24px;
+}
+
+.product-desc:last-child {
+    margin-bottom: 0;
 }
 
 .desc-title {
