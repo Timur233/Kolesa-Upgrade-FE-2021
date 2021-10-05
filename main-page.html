@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+    <link rel="stylesheet" href="src/css/main-page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App Main Page</title>
+</head>
+<body>
+    <div id="app">
+        <header class="main-header">
+            <div class="wrapper">
+                <div class="site-logo">
+                    <a href="/">
+                        <img src="src/assets/brand/logo.svg" alt="На главную" class="site-logo__image">
+                    </a>
+                </div>
+                <div class="search-box">
+                    <form action="/main-page.html" class="search-box__form">
+                        <div class="input-box">
+                            <input type="text" name="query" placeholder="Поиск" class="input-box__input" required>
+                            <button type="submit" class="input-box__fly-button">
+                                <img src="/src/assets/icons/search-big.svg" alt="Search icon">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="user-account">
+                    <a href="#" class="user-dropdown" title="Личный кабинет">
+                        <img src="src/assets/img/user.png" class="user-dropdown__image" alt="Мортиджан 300 баллов">
+                        <div class="user-info">
+                            <span class="user-info__name">Мортиджан</span>
+                            <span class="user-info__money">300 баллов</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="wrapper">
+                <div class="sidebar">
+                    <nav class="main-navigation">
+                        <ul class="main-navigation__list">
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link">
+                                    Оргсхема
+                                </a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link">
+                                    Kolesa <strong>Team</strong>
+                                </a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link main-navigation__link_active">
+                                    Kolesa Shop
+                                </a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link">
+                                    Картина компании
+                                </a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link">
+                                    Education
+                                </a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link">
+                                    Guidelines
+                                </a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link">
+                                    Библиотека
+                                </a>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#" class="main-navigation__link">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="content">
+                    <section class="promo-banner">
+                        <a href="#" class="promo-banner__link" title="Ссылка баннера">
+                            <img src="src/assets/img/promo.jpg" alt="Суперский баннер - картинка" class="promo-banner__image">
+                        </a>
+                    </section>
+                    <section class="hot-links">
+                        <div class="hot-links__item hot-links__item_color_green">
+                            <a class="hot-links__href" href="#">
+                                <span class="hot-links__icon">
+                                    <img src="src/assets/icons/plus.png" alt="Получить баллы" class="hot-links__img">
+                                </span>
+                                <span class="hot-links__text">Получить баллы</span>
+                            </a>
+                        </div>
+                        <div class="hot-links__item hot-links__item_color_yellow">
+                            <a class="hot-links__href" href="#">
+                                <span class="hot-links__icon">
+                                    <img src="src/assets/icons/quest.png" alt="Получить баллы" class="hot-links__img">
+                                </span>
+                                <span class="hot-links__text">Получить баллы</span>
+                            </a>
+                        </div>
+                        <div class="hot-links__item hot-links__item_color_blue">
+                            <a class="hot-links__href" href="#">
+                                <span class="hot-links__icon">
+                                    <img src="src/assets/icons/present.png" alt="Получить баллы" class="hot-links__img">
+                                </span>
+                                <span class="hot-links__text">Получить баллы</span>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="main-products">
+                        <nav class="product-tabs">
+                            <button class="product-tabs__button product-tabs__button_active" data-control="tabAll">Все товары</button>
+                            <button class="product-tabs__button" data-control="tabClothing">Одежда</button>
+                            <button class="product-tabs__button" data-control="tabAccessories">Аксессуары</button>
+                        </nav>
+                        <div id="tabAll" class="prdocts-list">
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <img src="src/assets/img/product.jpg" class="product-card__img" alt="Товар №n" height="330" width="330">
+                                </div>
+                                <div class="product-card__desc">
+                                    <span class="product-card__price">
+                                        220 баллов
+                                    </span>
+                                    <span class="product-card__title">
+                                        Футболка "Эволюционируй или умри
+                                    </span>
+                                    <span class="product-card__size">
+                                        Размеры S/M/L
+                                    </span>
+                                    <div class="button-hide button-hide__container">
+                                        <button class="button button--hide">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <img src="src/assets/img/product.jpg" class="product-card__img" alt="Товар №n" height="330" width="330">
+                                </div>
+                                <div class="product-card__desc">
+                                    <span class="product-card__price">
+                                        220 баллов
+                                    </span>
+                                    <span class="product-card__title">
+                                        Футболка "Эволюционируй или умри
+                                    </span>
+                                    <span class="product-card__size">
+                                        Размеры S/M/L
+                                    </span>
+                                    <div class="button-hide button-hide__container">
+                                        <button class="button button--hide">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <img src="src/assets/img/product.jpg" class="product-card__img" alt="Товар №n" height="330" width="330">
+                                </div>
+                                <div class="product-card__desc">
+                                    <span class="product-card__price">
+                                        220 баллов
+                                    </span>
+                                    <span class="product-card__title">
+                                        Футболка "Эволюционируй или умри
+                                    </span>
+                                    <span class="product-card__size">
+                                        Размеры S/M/L
+                                    </span>
+                                    <div class="button-hide button-hide__container">
+                                        <button class="button button--hide">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <img src="src/assets/img/product.jpg" class="product-card__img" alt="Товар №n" height="330" width="330">
+                                </div>
+                                <div class="product-card__desc">
+                                    <span class="product-card__price">
+                                        220 баллов
+                                    </span>
+                                    <span class="product-card__title">
+                                        Футболка "Эволюционируй или умри
+                                    </span>
+                                    <span class="product-card__size">
+                                        Размеры S/M/L
+                                    </span>
+                                    <div class="button-hide button-hide__container">
+                                        <button class="button button--hide">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <img src="src/assets/img/product.jpg" class="product-card__img" alt="Товар №n" height="330" width="330">
+                                </div>
+                                <div class="product-card__desc">
+                                    <span class="product-card__price">
+                                        220 баллов
+                                    </span>
+                                    <span class="product-card__title">
+                                        Футболка "Эволюционируй или умри
+                                    </span>
+                                    <span class="product-card__size">
+                                        Размеры S/M/L
+                                    </span>
+                                    <div class="button-hide button-hide__container">
+                                        <button class="button button--hide">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <img src="src/assets/img/product.jpg" class="product-card__img" alt="Товар №n" height="330" width="330">
+                                </div>
+                                <div class="product-card__desc">
+                                    <span class="product-card__price">
+                                        220 баллов
+                                    </span>
+                                    <span class="product-card__title">
+                                        Футболка "Эволюционируй или умри
+                                    </span>
+                                    <span class="product-card__size">
+                                        Размеры S/M/L
+                                    </span>
+                                    <div class="button-hide button-hide__container">
+                                        <button class="button button--hide">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <img src="src/assets/img/product.jpg" class="product-card__img" alt="Товар №n" height="330" width="330">
+                                </div>
+                                <div class="product-card__desc">
+                                    <span class="product-card__price">
+                                        220 баллов
+                                    </span>
+                                    <span class="product-card__title">
+                                        Футболка "Эволюционируй или умри
+                                    </span>
+                                    <span class="product-card__size">
+                                        Размеры S/M/L
+                                    </span>
+                                    <div class="button-hide button-hide__container">
+                                        <button class="button button--hide">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="wrapper wrapper--align-center">
+                <div class="social">
+                    <span class="copiright">© Kolesa Group</span>
+                    <ul class="social-buttons">
+                        <li class="social-buttons__item">
+                            <a href="#" title="social-link">
+                                <img src="src/assets/icons/Instagram.svg" class="social-buttons__icon" alt="social link">
+                            </a>
+                        </li>
+                        <li class="social-buttons__item">
+                            <a href="#" title="social-link">
+                                <img src="src/assets/icons/YouTube.svg" class="social-buttons__icon" alt="social link">
+                            </a>
+                        </li>
+                        <li class="social-buttons__item">
+                            <a href="#" title="social-link">
+                                <img src="src/assets/icons/VK.svg" class="social-buttons__icon" alt="social link">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="callback">
+                    <span class="callback__info">
+                        Есть идеи что улучшить?<br>
+                        Не знаешь, с кем решить проблему?
+                    </span>
+                    <button class="button button--white">Заказать</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
