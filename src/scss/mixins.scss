@@ -4,3 +4,12 @@
     line-height: $lh;
     font-weight: $fw;
 }
+
+//position
+@mixin over-content-position ($pos: absolute) {
+    position: $pos;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
