@@ -1,8 +1,5 @@
 import '../css/style.css';
-
-document.querySelector('#app').innerHTML = `
-  <h1>Hello, Timur!</h1>
-`;
+import '../scss/style.scss';
 
 const consoleStyles = `
     color:#fff;
