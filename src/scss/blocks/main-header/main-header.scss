@@ -1,0 +1,16 @@
+@import 'user-account.scss';
+@import 'search.scss';
+@import 'site-logo.scss';
+
+.main-header {
+    margin: spacer(8) 0 spacer(6);
+    height: 48px;
+
+    &__site-logo {
+        margin-right: spacer(5);
+    }
+
+    &__user-account {
+        margin-left: auto;
+    }
+}

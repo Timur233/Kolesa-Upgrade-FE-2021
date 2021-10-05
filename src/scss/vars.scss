@@ -1,0 +1,30 @@
+//colors
+$white: #fff;
+$text-color: #1c1819;
+$blue: #2a81dd;
+$red: #f33;
+
+//fonts
+$font-small: 13px;
+$font-normal: 14px;
+$font-middle: 16px;
+$font-large: 20px;
+$font-big: 24px;
+
+//sidebar
+$sidebar-width: 260px;
+
+//transition
+$slow-animation: 0.24s;
+$midd-animation: 0.18s;
+$fast-animation: 0.16s;
+
+//margin
+@function spacer($factor: 1) {
+    @return 4px * $factor;
+}
+
+//border-radius
+@function softer($factor: 1) {
+    @return 2px * $factor;
+}

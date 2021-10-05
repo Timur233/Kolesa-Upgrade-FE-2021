@@ -1,0 +1,47 @@
+.main-navigation {
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 36px;
+
+        @include font($font-middle, 24px);
+
+        &::before {
+            content: '';
+            position: absolute;
+            transition: 0.16s height;
+            left: -12px;
+            bottom: 0;
+            height: 0;
+            width: 4px;
+            border-radius: 10px;
+            background-color: #2a81dd;
+        }
+
+        &:hover::before {
+            height: 100%;
+        }
+
+        &--active {
+            font-weight: 700;
+
+            &::before {
+                height: 100%;
+            }
+        }
+    }
+}

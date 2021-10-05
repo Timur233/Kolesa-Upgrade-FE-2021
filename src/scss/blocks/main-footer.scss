@@ -1,0 +1,42 @@
+
+.main-footer {
+    background-color: $text-color;
+    color: $white;
+    padding: spacer(5) 0;
+
+    &__social-buttons {
+        margin: spacer(3) 0 0;
+    }
+
+    &__callback {
+        margin-left: auto;
+    }
+}
+
+.social-buttons {
+    padding: 0;
+    display: flex;
+
+    &__item {
+        margin-right: spacer(2);
+    }
+
+    &__icon {
+        width: 24px;
+    }
+}
+
+.copiright {
+    @include font($font-middle, 24px);
+}
+
+.callback {
+    display: flex;
+    align-items: center;
+
+    &__info {
+        @include font($font-normal, 24px);
+
+        padding-right: spacer(10);
+    }
+}

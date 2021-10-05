@@ -1,1 +1,23 @@
 @import 'reset.scss';
+@import 'vars.scss';
+@import 'mixins.scss';
+@import 'blocks/main-header/main-header.scss';
+@import 'blocks/navigation.scss';
+@import 'blocks/promo-banner.scss';
+@import 'blocks/hot-links.scss';
+@import 'blocks/main-products/main-products.scss';
+@import 'blocks/buttons.scss';
+@import 'blocks/main-footer.scss';
+@import 'blocks/app.scss';
+@import 'blocks/wrapper.scss';
+@import 'blocks/main-content.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #1c1819;
+}
+
+body * {
+    box-sizing: border-box;
+}

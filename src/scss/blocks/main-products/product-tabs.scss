@@ -1,0 +1,26 @@
+.product-tabs {
+    display: flex;
+
+    &__button {
+        margin-right: spacer(2);
+        height: 36px;
+        padding: 0 spacer(5);
+
+        @include font($font-normal, 24px);
+
+        color: $blue;
+        border-radius: softer(4);
+        background-color: $white;
+        cursor: pointer;
+        box-shadow: 0 0 0 1px rgb(28 24 25 / 10%) inset;
+        transition: $slow-animation background-color, color;
+        margin-bottom: spacer(2);
+
+        &--active,
+        &:hover {
+            background-color: #d6ecfb;
+            color: inherit;
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.button {
+    height: 44px;
+    padding: 0 spacer(10);
+    position: relative;
+    background-color: $blue;
+    color: $white;
+    border-radius: softer(4);
+
+    @include font($font-middle, 24px);
+
+    cursor: pointer;
+    transition: $fast-animation background-color;
+
+    &:hover {
+        background-color: lighten($blue, 10);
+    }
+
+    &:focus,
+    &:active {
+        box-shadow: 0 0 0 3px rgb(42 129 221 / 31%);
+    }
+
+    &--white {
+        background: $white;
+        color: $blue;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}
