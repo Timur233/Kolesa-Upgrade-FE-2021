@@ -1,8 +1,8 @@
 @import 'product-details.scss';
 
 .modal {
-    display: flex;
-    z-index: $layer-1;
+    display: none;
+    z-index: $layer-2;
 
     &__backdrop {
         background: $black;

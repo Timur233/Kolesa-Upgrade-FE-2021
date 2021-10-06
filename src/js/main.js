@@ -1,5 +1,21 @@
-// import '../css/style.css';
 import '../scss/style.scss';
+
+(function () {
+    const buttons = document.querySelectorAll('.product-card__hide-button');
+    const modal = document.querySelector('.app__modal');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+    });
+
+    const closeButton = document.querySelector('.modal__close-button');
+
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}());
 
 const consoleStyles = `
     color:#fff;
