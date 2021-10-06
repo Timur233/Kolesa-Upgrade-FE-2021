@@ -27,6 +27,12 @@ $slow-animation: 0.24s;
 $midd-animation: 0.18s;
 $fast-animation: 0.16s;
 
+//z-index
+$layer--1: -1;
+$layer-0: 0;
+$layer-1: 1;
+$layer-2: 2;
+
 //margin
 @function spacer($factor: 1) {
     @return 4px * $factor;
