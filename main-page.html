@@ -302,143 +302,143 @@
             <div class="modal__container">
                 <button class="modal__close-button" type="button"></button>
                 <div class="product-details">
-                    <div class="product-gallery">
-                        <div class="main-image">
+                    <div class="product-gallery product-details__gallery">
+                        <div class="product-gallery__main-image">
                             <img src="src/assets/product-image.png" alt="Футболка которая не футболка">
                         </div>
-                        <div class="gallery-carousel">
-                            <div class="gallery-item">
+                        <div class="gallery-carousel product-gallery__carousel">
+                            <div class="gallery-carousel__item">
                                 <a href="#image-item">
-                                    <img src="src/assets/product-image.png" alt="Футболка которая не футболка ITEM">
+                                    <img src="src/assets/product-image.png" class="gallery-carousel__item-image" alt="Футболка которая не футболка ITEM">
                                 </a>
                             </div>
-                            <div class="gallery-item">
+                            <div class="gallery-carousel__item">
                                 <a href="#image-item">
-                                    <img src="src/assets/product-image.png" alt="Футболка которая не футболка ITEM">
+                                    <img src="src/assets/product-image.png" class="gallery-carousel__item-image" alt="Футболка которая не футболка ITEM">
                                 </a>
                             </div>
-                            <div class="gallery-item">
+                            <div class="gallery-carousel__item">
                                 <a href="#image-item">
-                                    <img src="src/assets/product-image.png" alt="Футболка которая не футболка ITEM">
+                                    <img src="src/assets/product-image.png" class="gallery-carousel__item-image" alt="Футболка которая не футболка ITEM">
                                 </a>
                             </div>
-                            <div class="gallery-item">
+                            <div class="gallery-carousel__item">
                                 <a href="#image-item">
-                                    <img src="src/assets/product-image.png" alt="Футболка которая не футболка ITEM">
+                                    <img src="src/assets/product-image.png" class="gallery-carousel__item-image" alt="Футболка которая не футболка ITEM">
                                 </a>
                             </div>
-                            <div class="gallery-item active">
+                            <div class="gallery-carousel__item gallery-carousel__item--active">
                                 <a href="#image-item">
-                                    <img src="src/assets/product-image.png" alt="Футболка которая не футболка ITEM">
+                                    <img src="src/assets/product-image.png" class="gallery-carousel__item-image" alt="Футболка которая не футболка ITEM">
                                 </a>
                             </div>
-                            <div class="gallery-item">
+                            <div class="gallery-carousel__item">
                                 <a href="#image-item">
-                                    <img src="src/assets/product-image.png" alt="Футболка которая не футболка ITEM">
+                                    <img src="src/assets/product-image.png" class="gallery-carousel__item-image" alt="Футболка которая не футболка ITEM">
                                 </a>
                             </div>
-                            <div class="gallery-item">
+                            <div class="gallery-carousel__item">
                                 <a href="#image-item">
-                                    <img src="src/assets/product-image.png" alt="Футболка которая не футболка ITEM">
+                                    <img src="src/assets/product-image.png" class="gallery-carousel__item-image" alt="Футболка которая не футболка ITEM">
                                 </a>
                             </div>
-                            <div class="gallery-item">
+                            <div class="gallery-carousel__item">
                                 <a href="#image-item">
-                                    <img src="src/assets/product-image.png" alt="Футболка которая не футболка ITEM">
+                                    <img src="src/assets/product-image.png" class="gallery-carousel__item-image" alt="Футболка которая не футболка ITEM">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h2 class="product-title">Футболка "Эволюционируй или сдохни"</h2>
-                        <div class="product-summary">
-                            <div class="product-action">
-                                <h4 class="product-price">100 баллов</h4>
-                                <button class="button yellow" type="button">Попросить 50 баллов</button>
+                        <h2 class="product-info__title">Футболка "Эволюционируй или сдохни"</h2>
+                        <div class="product-summary product-info__summary">
+                            <div class="product-summary__action">
+                                <h4 class="product-summary__price">100 баллов</h4>
+                                <button class="button button--yellow" type="button">Попросить 50 баллов</button>
                             </div>
-                            <div class="user-wallet">
-                                <div class="text">
-                                    <span class="caption">Твой баланс:</span>
-                                    <span class="money">50 баллов</span>
+                            <div class="user-wallet product-summary__wallet">
+                                <div class="user-wallet__text">
+                                    <span class="user-wallet__caption">Твой баланс:</span>
+                                    <span class="user-wallet__money">50 баллов</span>
                                 </div>
-                                <div class="icon">
-                                    <img src="src/assets/shop.png" alt="Баланс пользователя">
+                                <div class="user-wallet__icon">
+                                    <img src="src/assets/shop.png" class="user-wallet__icon-image" alt="Баланс пользователя">
                                 </div>
                             </div>
                         </div>
-                        <div class="product-field">
-                            <span class="field-title">Цвета:</span>
-                            <div class="product-option">
-                                <input type="radio" id="color-blue" name="color" value="blue" checked hidden>
+                        <div class="product-field product-info__field">
+                            <span class="product-field__title">Цвета:</span>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="color-blue" class="product-option__input" name="color" value="blue" checked hidden>
                                 <label for="color-blue">
-                                    <span class="color-probe blue"></span>
-                                    <span class="color-caption">Синий</span>
+                                    <span class="product-option__color-probe product-option__color-probe--blue"></span>
+                                    <span class="product-option__caption">Синий</span>
                                 </label>
                             </div>
-                            <div class="product-option">
-                                <input type="radio" id="color-beige" name="color" value="beige" hidden>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="color-beige" class="product-option__input" name="color" value="beige" hidden>
                                 <label for="color-beige">
-                                    <span class="color-probe beige"></span>
-                                    <span class="color-caption">Бежевый</span>
+                                    <span class="product-option__color-probe product-option__color-probe--beige"></span>
+                                    <span class="product-option__caption">Бежевый</span>
                                 </label>
                             </div>
-                            <div class="product-option">
-                                <input type="radio" id="color-gray" name="color" value="gray" hidden>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="color-gray" class="product-option__input" name="color" value="gray" hidden>
                                 <label for="color-gray">
-                                    <span class="color-probe gray"></span>
-                                    <span class="color-caption">Серый</span>
+                                    <span class="product-option__color-probe product-option__color-probe--gray"></span>
+                                    <span class="product-option__caption">Серый</span>
                                 </label>
                             </div>
-                            <div class="product-option">
-                                <input type="radio" id="color-green" name="color" value="green" hidden>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="color-green" class="product-option__input" name="color" value="green" hidden>
                                 <label for="color-green">
-                                    <span class="color-probe green"></span>
-                                    <span class="color-caption">Зеленый</span>
+                                    <span class="product-option__color-probe product-option__color-probe--green"></span>
+                                    <span class="product-option__caption">Зеленый</span>
                                 </label>
                             </div>
-                            <div class="product-option">
-                                <input type="radio" id="color-red" name="color" value="red" hidden>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="color-red" class="product-option__input" name="color" value="red" hidden>
                                 <label for="color-red">
-                                    <span class="color-probe red"></span>
-                                    <span class="color-caption">Красный</span>
+                                    <span class="product-option__color-probe product-option__color-probe--red"></span>
+                                    <span class="product-option__caption">Красный</span>
                                 </label>
                             </div>
-                            <div class="product-option">
-                                <input type="radio" id="color-yellow" name="color" value="yellow" hidden>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="color-yellow" class="product-option__input" name="color" value="yellow" hidden>
                                 <label for="color-yellow">
-                                    <span class="color-probe yellow"></span>
-                                    <span class="color-caption">Желтый</span>
+                                    <span class="product-option__color-probe product-option__color-probe--yellow"></span>
+                                    <span class="product-option__caption">Желтый</span>
                                 </label>
                             </div>
                         </div>
-                        <div class="product-field">
-                            <span class="field-title">Размер:</span>
-                            <div class="product-option">
-                                <input type="radio" id="size-s" name="size" value="s" checked hidden>
+                        <div class="product-field product-info__field">
+                            <span class="product-field__title">Размер:</span>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="size-s" class="product-option__input" name="size" value="s" checked hidden>
                                 <label for="size-s">
                                     S
                                 </label>
                             </div>
-                            <div class="product-option">
-                                <input type="radio" id="size-m" name="size" value="m" hidden>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="size-m" class="product-option__input" name="size" value="m" hidden>
                                 <label for="size-m">
                                     M
                                 </label>
                             </div>
-                            <div class="product-option">
-                                <input type="radio" id="size-l" name="size" value="l" hidden>
+                            <div class="product-option product-field__option">
+                                <input type="radio" id="size-l" class="product-option__input" name="size" value="l" hidden>
                                 <label for="size-l">
                                     L
                                 </label>
                             </div>
                         </div>
-                        <div class="product-desc">
-                            <span class="desc-title">Детали:</span>
-                            <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
+                        <div class="product-desc product-info__desc">
+                            <span class="product-desc__title">Детали:</span>
+                            <p class="product-desc__content">Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
                         </div>
-                        <div class="product-desc">
-                            <span class="desc-title">Как выбрать размер:</span>
-                            <p>Написать дяде Рику для уточнения.</p>
+                        <div class="product-desc product-info__desc">
+                            <span class="product-desc__title">Как выбрать размер:</span>
+                            <p class="product-desc__content">Написать дяде Рику для уточнения.</p>
                         </div>
                     </div>
                 </div>
