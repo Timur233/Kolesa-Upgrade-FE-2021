@@ -30,4 +30,14 @@
             color: $white;
         }
     }
+
+    &--yellow {
+        background: $yellow;
+        color: $text-color;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+
+        &:hover {
+            background-color: lighten($yellow, 10);
+        }
+    }
 }
