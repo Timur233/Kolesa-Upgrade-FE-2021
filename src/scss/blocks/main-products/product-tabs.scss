@@ -2,12 +2,11 @@
     display: flex;
 
     &__button {
+        @include font($font-normal, 24px);
+
         margin-right: spacer(2);
         height: 36px;
         padding: 0 spacer(5);
-
-        @include font($font-normal, 24px);
-
         color: $blue;
         border-radius: softer(4);
         background-color: $white;

@@ -18,14 +18,14 @@
     }
 
     &__name {
-        color: $blue;
-
         @include font($font-normal, 24px, 600);
+
+        color: $blue;
     }
 
     &__money {
-        color: $text-color;
-
         @include font($font-small, 20px, 400);
+
+        color: $text-color;
     }
 }

@@ -13,12 +13,12 @@
     }
 
     &__link {
+        @include font($font-middle, 24px);
+
         display: flex;
         align-items: center;
         position: relative;
         height: 36px;
-
-        @include font($font-middle, 24px);
 
         &::before {
             content: '';

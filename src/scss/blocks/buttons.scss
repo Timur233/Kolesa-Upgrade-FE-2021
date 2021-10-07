@@ -1,13 +1,12 @@
 .button {
+    @include font($font-middle, 24px);
+
     height: 44px;
     padding: 0 spacer(10);
     position: relative;
     background-color: $blue;
     color: $white;
     border-radius: softer(4);
-
-    @include font($font-middle, 24px);
-
     cursor: pointer;
     transition: $fast-animation background-color;
 

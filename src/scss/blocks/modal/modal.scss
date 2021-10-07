@@ -5,11 +5,10 @@
     z-index: $layer-2;
 
     &__backdrop {
-        background: $black;
-        opacity: 0.6;
-
         @include over-content-position(fixed);
 
+        background: $black;
+        opacity: 0.6;
         z-index: $layer-0;
     }
 
