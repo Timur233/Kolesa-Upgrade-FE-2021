@@ -27,7 +27,7 @@
 
         &:focus,
         &:active {
-            box-shadow: 0 0 0 3px rgb(42 129 221 / 31%);
+            box-shadow: 0 0 0 3px rgb($blue, 0.3);
         }
     }
 

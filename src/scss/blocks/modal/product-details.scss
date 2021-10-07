@@ -136,7 +136,7 @@
         justify-content: center;
         padding: 0 spacer(2);
         border-radius: softer(4);
-        border: 1px solid rgb(28 24 25 / 10%);
+        border: 1px solid rgb($text-color, 0.1);
 
         @include font($font-normal, 24px);
 
