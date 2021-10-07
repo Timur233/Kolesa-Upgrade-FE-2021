@@ -3,6 +3,7 @@ import '../scss/style.scss';
 (function () {
     const buttons = document.querySelectorAll('.product-card__hide-button');
     const modal = document.querySelector('.app__modal');
+    const closeButton = document.querySelector('.modal__close-button');
 
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -10,11 +11,11 @@ import '../scss/style.scss';
         });
     });
 
-    const closeButton = document.querySelector('.modal__close-button');
-
-    closeButton.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
 }());
 
 const consoleStyles = `
