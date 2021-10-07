@@ -76,7 +76,7 @@
 .user-wallet {
     display: flex;
     align-items: center;
-    background: #f0fafd;
+    background: $blue-very-light;
     padding: spacer(2) spacer(4);
     border-radius: spacer(4);
 
@@ -96,7 +96,7 @@
 
         @include font($font-normal, 24px);
 
-        color: #888b94;
+        color: $grey-light;
         margin-bottom: spacer(1);
     }
 
@@ -146,9 +146,9 @@
 
     &__input {
         &[type='radio']:checked + .product-option__label {
-            background: #d6ecfb;
+            background: $blue-light;
             color: $text-color;
-            border-color: #d6ecfb;
+            border-color: $blue-light;
         }
     }
 
