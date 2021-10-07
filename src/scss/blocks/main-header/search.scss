@@ -17,12 +17,12 @@
         height: 44px;
         padding: 0 spacer(2) 0 spacer(14);
         border-radius: softer(4);
-        background-color: #f2f2f3;
+        background-color: $inputs-bg;
         outline: none;
         transition: 0.16s box-shadow;
 
         &::placeholder {
-            color: #888b94;
+            color: $grey-light;
         }
 
         &:focus,
