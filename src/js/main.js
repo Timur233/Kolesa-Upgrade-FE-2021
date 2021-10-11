@@ -1,8 +1,22 @@
-import '../css/style.css';
+import '../scss/style.scss';
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello, Timur!</h1>
-`;
+(function () {
+    const buttons = document.querySelectorAll('.product-card__hide-button');
+    const modal = document.querySelector('.app__modal');
+    const closeButton = document.querySelector('.modal__close-button');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+    });
+
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
+}());
 
 const consoleStyles = `
     color:#fff;
