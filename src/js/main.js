@@ -4,43 +4,136 @@ const productsData = () => {
     const products = {
         clothes: [
             {
-                id:    0,
-                title: 'Title',
-                size:  'L',
-                price: 220,
-                isNew: true,
-                img:   '/',
+                id:      0,
+                title:   'Футболка "Сдохни или умри"',
+                size:    'Размеры S/M/L',
+                price:   220,
+                isNew:   true,
+                img:     'src/assets/img/product.jpg',
+                gallery: ['src/assets/img/product.jpg', 'src/assets/img/product.jpg'],
+                options: [
+                    {
+                        type:  'color',
+                        title: 'Цвета',
+                        props: [
+                            {
+                                slug:  'blue',
+                                title: 'Синий',
+                            },
+                            {
+                                slug:  'beige',
+                                title: 'Бежевый',
+                            },
+                            {
+                                slug:  'gray',
+                                title: 'Серый',
+                            },
+                            {
+                                slug:  'green',
+                                title: 'Зеленый',
+                            },
+                            {
+                                slug:  'red',
+                                title: 'Красный',
+                            },
+                            {
+                                slug:  'yellow',
+                                title: 'Желтый',
+                            },
+                        ],
+                    },
+                    {
+                        type:  'size',
+                        title: 'Размер',
+                        props: [
+                            {
+                                slug:  's',
+                                title: 'S',
+                            },
+                            {
+                                slug:  'm',
+                                title: 'M',
+                            },
+                            {
+                                slug:  'l',
+                                title: 'L',
+                            },
+                        ],
+                    },
+                ],
+                details: [
+                    {
+                        title:   'Детали:',
+                        content: 'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
+                    },
+                    {
+                        title:   'Как выбрать размер:',
+                        content: `Написать дяде Рику для уточнения.
+                                И попросить портальную пушку,
+                                что бы сгонять за размерами.`,
+                    },
+                ],
             },
             {
                 id:    0,
                 title: 'Title',
                 size:  'L',
-                price: 220,
+                price: 210,
                 isNew: true,
                 img:   '/',
             },
         ],
-
         accessories: [
             {
                 id:    0,
                 title: 'Title',
                 size:  'L',
-                price: 220,
+                price: 150,
                 isNew: true,
                 img:   '/',
             },
         ],
     };
 
+    function sortProducts(array, prop = 'id', arrow = 'DESC') {
+        if (arrow === 'ASC') {
+            array.sort((a, b) => (a[prop] > b[prop] ? 1 : -1));
+        } else {
+            array.sort((a, b) => (a[prop] < b[prop] ? 1 : -1));
+        }
+
+        return array;
+    }
+
     function getProducts(category = 'all') {
-        return products[category];
+        if (products[category]) {
+            return sortProducts(products[category]);
+        }
+
+        let allProducts = [];
+
+        Object.keys(products).forEach((key) => {
+            allProducts = allProducts.concat(products[key]);
+        });
+
+        return sortProducts(allProducts, 'price');
     }
 
     return {
         getProducts,
     };
 };
+
+// const productDetails = (id, title, size = '', price = 0, isNew = false, img = '',
+//     gallery = [], options = [], details = []) => {
+//     function productGallery() {
+
+//     }
+// };
+
+// const modal = (selector) => {
+//     const modal
+// };
 
 const productCard = (id, title, size = '', price = 0, isNew = false, img = '') => {
     function imageBlock() {
@@ -183,12 +276,10 @@ const productsTabs = () => {
         });
     }());
 
-    getProducts('all');
+    // getProducts('all');
 };
 
 productsTabs();
-
-// console.log(productList('.js__product-list').append(productCard(12, 'test', '35', '234', true, '/')))
 
 (function () {
     const buttons = document.querySelectorAll('.product-card__hide-button');
