@@ -7,10 +7,10 @@ const productsData = () => {
                 id:      0,
                 title:   'Футболка "Сдохни или умри"',
                 size:    'Размеры S/M/L',
-                price:   220,
+                price:   200,
                 isNew:   true,
                 img:     'src/assets/img/product.jpg',
-                gallery: ['src/assets/img/product.jpg', 'src/assets/img/product.jpg'],
+                gallery: ['src/assets/img/product.jpg', 'src/assets/img/product1.jpg'],
                 options: [
                     {
                         type:  'color',
@@ -63,11 +63,11 @@ const productsData = () => {
                 ],
                 details: [
                     {
-                        title:   'Детали:',
+                        title:   'Детали',
                         content: 'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
                     },
                     {
-                        title:   'Как выбрать размер:',
+                        title:   'Как выбрать размер',
                         content: `Написать дяде Рику для уточнения.
                                 И попросить портальную пушку,
                                 что бы сгонять за размерами.`,
@@ -76,72 +76,56 @@ const productsData = () => {
             },
             {
                 id:      1,
-                title:   'Футболка "Сдохни или умри"',
-                size:    'Размеры S/M/L',
-                price:   222,
-                isNew:   true,
-                img:     'src/assets/img/product.jpg',
-                gallery: ['src/assets/img/product.jpg', 'src/assets/img/product.jpg'],
-                options: [
-                    {
-                        type:  'color',
-                        title: 'Цвета',
-                        props: [
-                            {
-                                slug:  'blue',
-                                title: 'Синий',
-                            },
-                            {
-                                slug:  'beige',
-                                title: 'Бежевый',
-                            },
-                            {
-                                slug:  'gray',
-                                title: 'Серый',
-                            },
-                            {
-                                slug:  'green',
-                                title: 'Зеленый',
-                            },
-                            {
-                                slug:  'red',
-                                title: 'Красный',
-                            },
-                            {
-                                slug:  'yellow',
-                                title: 'Желтый',
-                            },
-                        ],
-                    },
-                    {
-                        type:  'size',
-                        title: 'Размер',
-                        props: [
-                            {
-                                slug:  's',
-                                title: 'S',
-                            },
-                            {
-                                slug:  'm',
-                                title: 'M',
-                            },
-                            {
-                                slug:  'l',
-                                title: 'L',
-                            },
-                        ],
-                    },
-                ],
+                title:   'Кепка с надписью',
+                size:    'Для большой и умной головы',
+                price:   150,
+                isNew:   false,
+                img:     'src/assets/img/product2.jpg',
+                gallery: ['src/assets/img/product2.jpg', 'src/assets/img/product3.jpg'],
                 details: [
                     {
-                        title:   'Детали:',
-                        content: 'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
+                        title:   'Детали',
+                        content: 'Брендовая кепка, только для самых умных. Предназначена беречь от солнца',
                     },
                     {
-                        title:   'Как выбрать размер:',
-                        content: `Написать дяде Рику для уточнения.
-                                И попросить портальную пушку,
-                                что бы сгонять за размерами.`,
+                        title:   'Как выбрать размер',
+                        content: 'Подойти, надеть, посмотреть в зеркало. ',
+                    },
+                ],
+            },
+            {
+                id:      2,
+                title:   'Футболка с надписью "Доведи меня до сарказма"',
+                size:    'Размеры S/M',
+                price:   280,
+                isNew:   false,
+                img:     'src/assets/img/product4.jpg',
+                gallery: ['src/assets/img/product4.jpg', 'src/assets/img/product5.jpg'],
+                details: [
+                    {
+                        title:   'Детали',
+                        content: 'Брендовая кепка, только для самых умных. Предназначена беречь от солнца',
+                    },
+                    {
+                        title:   'Как выбрать размер',
+                        content: 'Подойти, надеть, посмотреть в зеркало. ',
+                    },
+                ],
+            },
+            {
+                id:      5,
+                title:   'Светящиеся кроссовки Adidas Yeezy Boost 700 Vol 3 by Kanye West"',
+                size:    '40/42/44/45',
+                price:   380,
+                isNew:   true,
+                img:     'src/assets/img/product7.jpg',
+                gallery: ['src/assets/img/product7.jpg'],
+                details: [
+                    {
+                        title:   'Детали',
+                        content: `Одни из самых удобных кроссовок из всех существующих....
+                                это кроссовки родившиеся от сотрудничества компании
+                                adidas и легендарного Кени Веста ( Kanye West)  , название им Yeezy Boost 700.`,
                     },
                 ],
             },
@@ -149,79 +133,79 @@ const productsData = () => {
         accessories: [
             {
                 id:      3,
-                title:   'Футболка "Сдохни или умри"',
-                size:    'Размеры S/M/L',
-                price:   223,
+                title:   'Бутылка для воды',
+                size:    '0,7 л',
+                price:   100,
                 isNew:   true,
-                img:     'src/assets/img/product.jpg',
-                gallery: ['src/assets/img/product.jpg', 'src/assets/img/product.jpg'],
-                options: [
-                    {
-                        type:  'color',
-                        title: 'Цвета',
-                        props: [
-                            {
-                                slug:  'blue',
-                                title: 'Синий',
-                            },
-                            {
-                                slug:  'beige',
-                                title: 'Бежевый',
-                            },
-                            {
-                                slug:  'gray',
-                                title: 'Серый',
-                            },
-                            {
-                                slug:  'green',
-                                title: 'Зеленый',
-                            },
-                            {
-                                slug:  'red',
-                                title: 'Красный',
-                            },
-                            {
-                                slug:  'yellow',
-                                title: 'Желтый',
-                            },
-                        ],
-                    },
-                    {
-                        type:  'size',
-                        title: 'Размер',
-                        props: [
-                            {
-                                slug:  's',
-                                title: 'S',
-                            },
-                            {
-                                slug:  'm',
-                                title: 'M',
-                            },
-                            {
-                                slug:  'l',
-                                title: 'L',
-                            },
-                        ],
-                    },
-                ],
+                img:     'src/assets/img/product1.jpg',
+                gallery: [],
                 details: [
                     {
-                        title:   'Детали:',
-                        content: 'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
+                        title:   'Детали',
+                        content: 'Бутылка для воды с трубочкой. Очень удобна для занятий спортом и питья',
                     },
+                ],
+            },
+            {
+                id:      4,
+                title:   'Эргономичный Пластиковый Ремень"',
+                size:    '30 см',
+                price:   80,
+                isNew:   true,
+                img:     'src/assets/img/product6.jpg',
+                gallery: ['src/assets/img/product6.jpg'],
+                details: [
                     {
-                        title:   'Как выбрать размер:',
-                        content: `Написать дяде Рику для уточнения.
-                                И попросить портальную пушку,
-                                что бы сгонять за размерами.`,
+                        title:   'Детали',
+                        content: `Ergonomic executive chair upholstered in bonded black leather and
+                                PVC padded seat and back for all-day comfort and support`,
+                    },
+                ],
+            },
+            {
+                id:      6,
+                title:   'КРОССОВКИ ADIDAS X LEGO® SUPERSTAR',
+                size:    '',
+                price:   500,
+                isNew:   false,
+                img:     'src/assets/img/product8.jpg',
+                gallery: ['src/assets/img/product8.jpg', 'src/assets/img/product9.jpg'],
+                details: [
+                    {
+                        title:   'Детали',
+                        content: `Добавь в свою коллекцию кроссовок уникальную
+                        модель-конструктор adidas x LEGO® Superstar.
+                        Эта версия из коллаборации adidas и LEGO Group
+                        включает в себя культовую графику adidas Superstar,
+                        мысок-ракушку, Трилистник и зазубренные три полоски. У нее есть даже настоящая шнуровка.
+                        Конструктор поставляется в особой коробке, похожей на обычную, но с деталями LEGO.
+                        `,
+                    },
+                ],
+            },
+            {
+                id:      7,
+                title:   'Ручка BTS',
+                size:    '',
+                price:   240,
+                isNew:   false,
+                img:     'src/assets/img/product10.jpg',
+                gallery: ['src/assets/img/product10.jpg'],
+                details: [
+                    {
+                        title:   'Детали',
+                        content: `Длина:16.1cm
+                        Цвет: Черный
+                        Толщина линии :0.5 мм
+                        Материал: Пластик
+                        `,
                     },
                 ],
             },
         ],
     };
 
-    function sortProducts(array, prop = 'id', arrow = 'DESC') {
+    function sortProducts(array, prop = 'isNew', arrow = 'DESC') {
         if (arrow === 'ASC') {
             array.sort((a, b) => (a[prop] > b[prop] ? 1 : -1));
         } else {
@@ -242,7 +226,7 @@ const productsData = () => {
             allProducts = allProducts.concat(products[key]);
         });
 
-        return sortProducts(allProducts, 'price');
+        return sortProducts(allProducts);
     }
 
     function getOneProduct(id) {
@@ -276,6 +260,8 @@ const productDetails = (productId) => {
 
         mainImage.src = img || 'src/assets/img/placeholder.jpg';
         mainImage.alt = title;
+        mainImage.width = 330;
+        mainImage.height = 330;
 
         mainImageBlock.classList = 'product-gallery__main-image';
         mainImageBlock.appendChild(mainImage);
@@ -485,6 +471,7 @@ const productCard = (id, title, size = '', price = 0, isNew = false, img = '') =
             const sizeNode = document.createElement('span');
 
             sizeNode.classList = 'product-card__size';
+            sizeNode.textContent = size;
             block.appendChild(sizeNode);
         }
 
