@@ -78,7 +78,7 @@ const productsData = () => {
                 id:      1,
                 title:   'Футболка "Сдохни или умри"',
                 size:    'Размеры S/M/L',
-                price:   220,
+                price:   222,
                 isNew:   true,
                 img:     'src/assets/img/product.jpg',
                 gallery: ['src/assets/img/product.jpg', 'src/assets/img/product.jpg'],
@@ -148,10 +148,10 @@ const productsData = () => {
         ],
         accessories: [
             {
-                id:      0,
+                id:      3,
                 title:   'Футболка "Сдохни или умри"',
                 size:    'Размеры S/M/L',
-                price:   220,
+                price:   223,
                 isNew:   true,
                 img:     'src/assets/img/product.jpg',
                 gallery: ['src/assets/img/product.jpg', 'src/assets/img/product.jpg'],
@@ -248,7 +248,7 @@ const productsData = () => {
     function getOneProduct(id) {
         const searchProducts = getProducts('all');
 
-        for (let i = 0; i < searchProducts.length; i + 1) {
+        for (let i = 0; i < searchProducts.length; i += 1) {
             if (searchProducts[i].id === id) {
                 return searchProducts[i];
             }
