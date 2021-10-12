@@ -75,22 +75,148 @@ const productsData = () => {
                 ],
             },
             {
-                id:    0,
-                title: 'Title',
-                size:  'L',
-                price: 210,
-                isNew: true,
-                img:   '/',
+                id:      1,
+                title:   'Футболка "Сдохни или умри"',
+                size:    'Размеры S/M/L',
+                price:   220,
+                isNew:   true,
+                img:     'src/assets/img/product.jpg',
+                gallery: ['src/assets/img/product.jpg', 'src/assets/img/product.jpg'],
+                options: [
+                    {
+                        type:  'color',
+                        title: 'Цвета',
+                        props: [
+                            {
+                                slug:  'blue',
+                                title: 'Синий',
+                            },
+                            {
+                                slug:  'beige',
+                                title: 'Бежевый',
+                            },
+                            {
+                                slug:  'gray',
+                                title: 'Серый',
+                            },
+                            {
+                                slug:  'green',
+                                title: 'Зеленый',
+                            },
+                            {
+                                slug:  'red',
+                                title: 'Красный',
+                            },
+                            {
+                                slug:  'yellow',
+                                title: 'Желтый',
+                            },
+                        ],
+                    },
+                    {
+                        type:  'size',
+                        title: 'Размер',
+                        props: [
+                            {
+                                slug:  's',
+                                title: 'S',
+                            },
+                            {
+                                slug:  'm',
+                                title: 'M',
+                            },
+                            {
+                                slug:  'l',
+                                title: 'L',
+                            },
+                        ],
+                    },
+                ],
+                details: [
+                    {
+                        title:   'Детали:',
+                        content: 'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
+                    },
+                    {
+                        title:   'Как выбрать размер:',
+                        content: `Написать дяде Рику для уточнения.
+                                И попросить портальную пушку,
+                                что бы сгонять за размерами.`,
+                    },
+                ],
             },
         ],
         accessories: [
             {
-                id:    0,
-                title: 'Title',
-                size:  'L',
-                price: 150,
-                isNew: true,
-                img:   '/',
+                id:      0,
+                title:   'Футболка "Сдохни или умри"',
+                size:    'Размеры S/M/L',
+                price:   220,
+                isNew:   true,
+                img:     'src/assets/img/product.jpg',
+                gallery: ['src/assets/img/product.jpg', 'src/assets/img/product.jpg'],
+                options: [
+                    {
+                        type:  'color',
+                        title: 'Цвета',
+                        props: [
+                            {
+                                slug:  'blue',
+                                title: 'Синий',
+                            },
+                            {
+                                slug:  'beige',
+                                title: 'Бежевый',
+                            },
+                            {
+                                slug:  'gray',
+                                title: 'Серый',
+                            },
+                            {
+                                slug:  'green',
+                                title: 'Зеленый',
+                            },
+                            {
+                                slug:  'red',
+                                title: 'Красный',
+                            },
+                            {
+                                slug:  'yellow',
+                                title: 'Желтый',
+                            },
+                        ],
+                    },
+                    {
+                        type:  'size',
+                        title: 'Размер',
+                        props: [
+                            {
+                                slug:  's',
+                                title: 'S',
+                            },
+                            {
+                                slug:  'm',
+                                title: 'M',
+                            },
+                            {
+                                slug:  'l',
+                                title: 'L',
+                            },
+                        ],
+                    },
+                ],
+                details: [
+                    {
+                        title:   'Детали:',
+                        content: 'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
+                    },
+                    {
+                        title:   'Как выбрать размер:',
+                        content: `Написать дяде Рику для уточнения.
+                                И попросить портальную пушку,
+                                что бы сгонять за размерами.`,
+                    },
+                ],
             },
         ],
     };
@@ -119,21 +245,179 @@ const productsData = () => {
         return sortProducts(allProducts, 'price');
     }
 
+    function getOneProduct(id) {
+        const searchProducts = getProducts('all');
+
+        for (let i = 0; i < searchProducts.length; i + 1) {
+            if (searchProducts[i].id === id) {
+                return searchProducts[i];
+            }
+        }
+
+        return false;
+    }
+
     return {
         getProducts,
+        getOneProduct,
     };
 };
 
-// const productDetails = (id, title, size = '', price = 0, isNew = false, img = '',
-//     gallery = [], options = [], details = []) => {
-//     function productGallery() {
+const productDetails = (productId) => {
+    const {
+        title, price, isNew, img, gallery, details,
+    } = productsData().getOneProduct(productId);
 
-//     }
-// };
+    function productGallery() {
+        const block = document.createElement('div');
+        const mainImageBlock = document.createElement('div');
+        const mainImage = document.createElement('img');
+        const galleryNode = document.createElement('div');
 
-// const modal = (selector) => {
-//     const modal
-// };
+        mainImage.src = img || 'src/assets/img/placeholder.jpg';
+        mainImage.alt = title;
+
+        mainImageBlock.classList = 'product-gallery__main-image';
+        mainImageBlock.appendChild(mainImage);
+
+        galleryNode.classList = 'gallery-carousel product-gallery__carousel';
+        gallery.forEach((galleryItem) => {
+            const itemNode = document.createElement('div');
+            const itemLink = document.createElement('a');
+            const itemImg = document.createElement('img');
+
+            itemImg.classList = 'gallery-carousel__item-image';
+            itemImg.alt = title;
+            itemImg.src = galleryItem;
+
+            itemLink.href = 'galleryItem';
+            itemLink.appendChild(itemImg);
+            itemLink.addEventListener('click', (evt) => {
+                mainImage.src = galleryItem;
+                evt.preventDefault();
+            });
+
+            itemNode.classList = 'gallery-carousel__item';
+            itemNode.appendChild(itemLink);
+
+            galleryNode.appendChild(itemNode);
+        });
+
+        if (isNew) {
+            const badge = document.createElement('span');
+
+            badge.classList = 'badge badge--green';
+            badge.textContent = 'NEW';
+
+            block.appendChild(badge);
+        }
+
+        block.classList = 'product-gallery product-details__gallery';
+        block.appendChild(mainImageBlock);
+        block.appendChild(galleryNode);
+
+        return block;
+    }
+
+    function productInfo() {
+        const wrapper = document.createElement('div');
+        const detailsHtml = () => {
+            let html = '';
+
+            details.forEach((detail) => {
+                html += `<div class="product-desc product-info__desc">
+                            <span class="product-desc__title">${detail.title}:</span>
+                            <p class="product-desc__content">${detail.content}</p>
+                        </div>`;
+            });
+
+            return html;
+        };
+        const html = `  <h2 class="product-info__title">${title}</h2>
+                        <div class="product-summary product-info__summary">
+                            <div class="product-summary__action">
+                                <h4 class="product-summary__price">${price} баллов</h4>
+                                <button class="button button--blue" type="button">Заказать</button>
+                            </div>
+                            <div class="user-wallet product-summary__wallet">
+                                <div class="user-wallet__text">
+                                    <span class="user-wallet__caption">Твой баланс:</span>
+                                    <span class="user-wallet__money">50 баллов</span>
+                                </div>
+                                <div class="user-wallet__icon">
+                                    <img src="src/assets/shop.png"
+                                    class="user-wallet__icon-image"
+                                    alt="Баланс пользователя">
+                                </div>
+                            </div>
+                        </div>
+                        ${detailsHtml()}
+                    `;
+
+        wrapper.classList = 'product-info';
+        wrapper.innerHTML = html;
+
+        return wrapper;
+    }
+
+    function collectBlock() {
+        const wrapper = document.createElement('div');
+
+        wrapper.classList = 'product-details';
+        wrapper.appendChild(productGallery());
+        wrapper.appendChild(productInfo());
+
+        return wrapper;
+    }
+
+    return collectBlock();
+};
+
+const modal = (html) => {
+    let modalNode;
+    let modalContainer;
+    let modalCloseButton;
+    let modalContent;
+    let modalBackdrop;
+
+    function modalClose() {
+        modalNode.style.display = 'none';
+        modalNode.remove();
+    }
+
+    function creiateModal() {
+        modalNode = document.createElement('div');
+        modalNode.classList = 'modal app__modal';
+
+        modalContainer = document.createElement('div');
+        modalContainer.classList = 'modal__container';
+        modalNode.appendChild(modalContainer);
+
+        modalCloseButton = document.createElement('button');
+        modalCloseButton.classList = 'modal__close-button';
+        modalCloseButton.addEventListener('click', () => { modalClose(); });
+        modalContainer.appendChild(modalCloseButton);
+
+        modalContent = document.createElement('div');
+        modalContent.classList = 'modal__content';
+        modalContent.appendChild(html);
+        modalContainer.appendChild(modalContent);
+
+        modalBackdrop = document.createElement('div');
+        modalBackdrop.classList = 'modal__backdrop';
+        modalBackdrop.addEventListener('click', () => { modalClose(); });
+        modalNode.appendChild(modalBackdrop);
+
+        document.body.appendChild(modalNode);
+    }
+
+    function modalOpen() {
+        creiateModal();
+        modalNode.style.display = 'flex';
+    }
+
+    return modalOpen();
+};
 
 const productCard = (id, title, size = '', price = 0, isNew = false, img = '') => {
     function imageBlock() {
@@ -171,7 +455,7 @@ const productCard = (id, title, size = '', price = 0, isNew = false, img = '') =
         button.setAttribute('data-id', id);
         button.textContent = 'Заказать';
         button.addEventListener('click', () => {
-            // openModal(productDetailsHtml());
+            modal(productDetails(id));
         });
 
         block.appendChild(button);
@@ -270,34 +554,21 @@ const productsTabs = () => {
 
         tabs.forEach((tab) => {
             tab.addEventListener('click', () => {
+                const activeTab = document.querySelector('.js__product-tab.button--small--active');
+
+                activeTab.classList.remove('button--small--active');
+                tab.classList.add('button--small--active');
+
                 productList('.js__product-list').clear();
                 getProducts(tab.getAttribute('data-control'));
             });
         });
     }());
 
-    // getProducts('all');
+    getProducts('all');
 };
 
 productsTabs();
-
-(function () {
-    const buttons = document.querySelectorAll('.product-card__hide-button');
-    const modal = document.querySelector('.app__modal');
-    const closeButton = document.querySelector('.modal__close-button');
-
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-            modal.style.display = 'flex';
-        });
-    });
-
-    if (closeButton) {
-        closeButton.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-    }
-}());
 
 const consoleStyles = `
     color:#fff;
