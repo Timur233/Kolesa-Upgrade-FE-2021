@@ -34,4 +34,8 @@
         height: 32px;
         cursor: pointer;
     }
+
+    &--open {
+        display: flex;
+    }
 }
