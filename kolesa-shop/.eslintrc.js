@@ -1,6 +1,6 @@
 module.exports = {
     root:    true,
-    extends: ["plugin:vue/base"],
+    extends: 'airbnb-base',
     env:     {
         browser: true,
     },
