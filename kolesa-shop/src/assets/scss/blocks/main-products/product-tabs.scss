@@ -1,0 +1,8 @@
+.product-tabs {
+    display: flex;
+
+    &__button {
+        margin-right: spacer(2);
+        margin-bottom: spacer(2);
+    }
+}

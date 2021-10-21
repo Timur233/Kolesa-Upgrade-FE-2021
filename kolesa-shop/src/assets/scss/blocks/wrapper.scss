@@ -1,0 +1,9 @@
+.wrapper {
+    max-width: 1318px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    &--align-center {
+        align-items: center;
+    }
+}
