@@ -1,0 +1,21 @@
+.badge {
+    @include font($font-small, 1);
+    @include user-select();
+
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 0 spacer(1);
+    border-radius: softer(2);
+    position: absolute;
+    left: spacer(4);
+    bottom: spacer(4);
+    user-select: none;
+    background-color: white;
+    color: $text-color;
+
+    &--green {
+        background-color: $green;
+        color: $white;
+    }
+}

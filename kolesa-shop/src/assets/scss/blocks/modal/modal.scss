@@ -1,0 +1,41 @@
+@import 'product-details.scss';
+
+.modal {
+    display: none;
+    z-index: $layer-2;
+
+    &__backdrop {
+        @include over-content-position(fixed);
+
+        background: $black;
+        opacity: 0.6;
+        z-index: $layer-0;
+    }
+
+    &__container {
+        margin: auto;
+        position: relative;
+        z-index: $layer-1;
+        padding: spacer(14);
+        max-width: 1040px;
+        background-color: $white;
+        border-radius: softer(8);
+    }
+
+    &__close-button {
+        position: absolute;
+        right: spacer(6);
+        top: spacer(6);
+        background: transparent  url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.4372 0.666748L10.0012 9.1021L1.56404 0.666748L0.666626 1.56283L9.10255 9.99945L0.666626 18.4348L1.56404 19.3334L10.0012 10.8968L18.4372 19.3334L19.3333 18.4348L10.8974 9.99945L19.3333 1.56283L18.4372 0.666748Z' fill='%23888B94'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    &--open {
+        display: flex;
+    }
+}

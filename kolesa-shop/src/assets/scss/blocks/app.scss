@@ -1,0 +1,21 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    &__main-footer {
+        margin-top: auto;
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+    }
+
+    &__modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
