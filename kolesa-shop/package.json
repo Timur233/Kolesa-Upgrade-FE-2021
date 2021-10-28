@@ -21,13 +21,9 @@
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "simple-git-hooks": "^2.6.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "vue-template-compiler": "^2.6.11"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
