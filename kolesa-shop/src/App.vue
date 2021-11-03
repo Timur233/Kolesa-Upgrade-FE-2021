@@ -82,7 +82,7 @@ export default {
             isModal:   false,
             modalCard: {},
             activeTab: 'all',
-            searchQuery: '123',
+            searchQuery: '',
             userData: {},
             tabs:      [
                 {
